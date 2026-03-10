@@ -1,7 +1,9 @@
-import pandas as pd
 import os
+
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import joblib
+
 
 train_path = "data/train"
 
