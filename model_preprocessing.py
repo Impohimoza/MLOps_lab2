@@ -21,9 +21,7 @@ y = data["sales"]
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-os.makedirs("models", exist_ok=True)
-
-joblib.dump(scaler, "models/scaler.pkl")
+joblib.dump(scaler, "data/scaler.pkl")
 
 pd.DataFrame(X_scaled).to_csv("data/train/X_train_scaled.csv", index=False)
 y.to_csv("data/train/y_train.csv", index=False)

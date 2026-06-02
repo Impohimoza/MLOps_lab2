@@ -5,8 +5,8 @@ import joblib
 from sklearn.metrics import mean_squared_error
 
 
-model = joblib.load("models/model.pkl")
-scaler = joblib.load("models/scaler.pkl")
+model = joblib.load("data/model.pkl")
+scaler = joblib.load("data/scaler.pkl")
 
 test_path = "data/test"
 

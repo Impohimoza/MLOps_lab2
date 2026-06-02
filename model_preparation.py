@@ -9,6 +9,6 @@ model = LinearRegression()
 
 model.fit(X, y.values.ravel())
 
-joblib.dump(model, "models/model.pkl")
+joblib.dump(model, "data/model.pkl")
 
 print("Model trained")
